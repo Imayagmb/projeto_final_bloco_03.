@@ -27,7 +27,7 @@ function DeleteProduto() {
   }
 
   return (
-    <div className="max-w-md mx-auto px-8 py-12 text-center">
+    <div className="max-w-md mx-auto px-4 md:px-8 py-12 text-center">
       <h2 className="text-xl font-semibold text-red-600 mb-4">
         Deletar Produto
       </h2>

@@ -17,9 +17,9 @@ function ListaCategorias() {
   }, []);
 
   return (
-  <div className="max-w-5xl mx-auto px-8 py-12">
+  <div className="max-w-5xl mx-auto px-4 md:px-8 py-12">
 
-      <div className="flex justify-between items-center mb-6">
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3 mb-6">
         <h2 className="text-xl font-semibold text-sky-700">Categorias</h2>
         <Link
           to="/gerenciarCategorias"
@@ -30,7 +30,7 @@ function ListaCategorias() {
         </Link>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {categorias.map((categoria) => (
           <CardCategoria key={categoria.id} categoria={categoria} />
         ))}

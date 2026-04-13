@@ -61,7 +61,7 @@ function atualizarEstado(e: ChangeEvent<HTMLInputElement>) {
   }
 
   return (
-    <div className="max-w-xl mx-auto px-8 py-12">
+    <div className="w-full max-w-xl px-4 mx-auto md:px-8 py-8 md:py-12">
       <h2 className="text-xl font-semibold text-sky-700 mb-6">
         {isEdicao ? "Editar Produto" : "Novo Produto"}
       </h2>

@@ -8,12 +8,12 @@ function Home() {
 
       {/* HERO */}
       <div className="bg-sky-700 text-white">
-        <div className="max-w-6xl mx-auto px-8 py-16 flex flex-col md:flex-row items-center gap-10">
-          <div className="flex-1">
-            <h2 className="text-4xl font-bold mb-4 leading-tight">
+        <div className="max-w-6xl mx-auto px-4 py-10 md:py-16 flex flex-col md:flex-row items-center gap-8">
+          <div className="flex-1 text-center md:text-left">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 leading-tight">
               Saúde, beleza e bem-estar <br /> para toda a família
             </h2>
-            <p className="text-sky-100 text-lg mb-8">
+            <p className="text-sky-100 text-base md:text-lg mb-8">
               Medicamentos, cosméticos, vitaminas e muito mais 
               com qualidade e preço justo.
             </p>
@@ -22,20 +22,20 @@ function Home() {
               Ver Categorias
             </Link >
           </div>
-          <div className="flex-1 flex justify-end">
+          <div className="flex-1 flex justify-center md:justify-end">
             <img
               src= "https://ik.imagekit.io/9yqf3fqpw/Hero.png"
               alt="Farmácia"
-              className="h-[500px] scale-130 translate-x-40 object-contain"
+              className="h-64 md:h-[420px]  object-contain"
             />
           </div>
         </div>
       </div>
 
 {/* CATEGORIAS */}
-<div className="max-w-5xl mx-auto px-8 py-12">
+<div className="max-w-5xl mx-auto px-4 md:px-8 py-12">
   <h2 className="text-xl font-semibold text-sky-700 mb-6">Nossas Categorias</h2>
-  <div className="grid grid-cols-4 gap-3">
+  <div className="grid grigrid grid-cols-2 sm:grid-cols-4 gap-3d-cols-4 gap-3">
     {[
       { icon: <RiMedicineBottleLine size={32} className="text-sky-500" />, nome: "Medicamentos", desc: "Remédios e genéricos" },
       { icon: <RiMagicLine size={32} className="text-sky-500" />, nome: "Cosméticos", desc: "Maquiagem e beleza" },
@@ -59,10 +59,10 @@ function Home() {
 </div>
 
 {/* POR QUE ESCOLHER CiaFarma? */}
-<div className="bg-green-50 py-10 px-8">
+<div className="bg-green-50 py-10 px-4 md:px-8">
   <div className="max-w-5xl mx-auto">
     <h2 className="text-xl font-semibold text-sky-700 mb-6">Por que a CiaFarma?</h2>
-    <div className="grid grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
       {[
         { icon: <RiTruckLine size={28} className="text-green-600" />, titulo: "Entrega Rápida", desc: "Receba em até 24h" },
         { icon: <RiBankCardLine size={28} className="text-green-600" />, titulo: "Pagamento Fácil", desc: "Pix, cartão e boleto" },
