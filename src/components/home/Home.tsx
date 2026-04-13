@@ -1,5 +1,6 @@
 import { RiMedicineBottleLine, RiMagicLine, RiLeafLine, RiHeartPulseLine, RiToothLine, RiRunLine, RiStethoscopeLine, RiEmotionHappyLine } from "react-icons/ri";
 import { RiTruckLine, RiBankCardLine, RiShieldCheckLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -16,9 +17,10 @@ function Home() {
               Medicamentos, cosméticos, vitaminas e muito mais 
               com qualidade e preço justo.
             </p>
-            <button className="bg-green-600 text-white font-bold px-8 py-3 rounded-lg hover:bg-green-500 transition">
+            <Link to ="/categorias"
+            className="bg-green-600 text-white font-bold px-8 py-3 rounded-lg hover:bg-green-500 transition">
               Ver Categorias
-            </button>
+            </Link >
           </div>
           <div className="flex-1 flex justify-end">
             <img
@@ -56,7 +58,7 @@ function Home() {
   </div>
 </div>
 
-{/* Por que a CiaFarma? */}
+{/* POR QUE ESCOLHER CiaFarma? */}
 <div className="bg-green-50 py-10 px-8">
   <div className="max-w-5xl mx-auto">
     <h2 className="text-xl font-semibold text-sky-700 mb-6">Por que a CiaFarma?</h2>
@@ -78,13 +80,14 @@ function Home() {
   </div>
 </div>
 
-      {/* Banner */}
+      {/* BANNER */}
       <div className="bg-green-600 text-white text-center py-12 px-6">
         <h3 className="text-2xl font-bold mb-2">Cuide da sua saúde hoje</h3>
         <p className="text-green-100 mb-6">Explore nossas categorias e encontre o que precisa</p>
-        <button className="bg-white text-green-600 font-bold px-8 py-3 rounded-lg hover:bg-green-50 transition">
+        <Link to = "/categorias" 
+        className="bg-white text-green-600 font-bold px-8 py-3 rounded-lg hover:bg-green-50 transition">
           Explorar Agora
-        </button>
+        </Link>
       </div>
 
     </div>

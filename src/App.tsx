@@ -6,6 +6,10 @@ import ListaCategorias from "./components/categorias/listacategorias/ListaCatego
 import FormCategoria from "./components/categorias/formcategoria/FormCategoria";
 import DeleteCategoria from "./components/categorias/deletecategoria/DeleteCategoria";
 import GerenciarCategorias from "./components/categorias/gerenciacategorias/GerenciarCategorias";
+import ListaProdutos from "./components/produtos/listaproduto/ListaProdutos";
+import FormProduto from "./components/produtos/formproduto/FormProduto";
+import DeleteProduto from "./components/produtos/deleteproduto/DeleteProduto";
+import GerenciarProdutos from "./components/produtos/gerenciarprodutos/GerenciaProdutos";
 
 function App() {
   return (
@@ -17,10 +21,18 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/categorias" element={<ListaCategorias />} />
-            <Route path="/gerenciarCategorias" element={<GerenciarCategorias />} />
+            <Route
+              path="/gerenciarCategorias"
+              element={<GerenciarCategorias />}
+            />
             <Route path="/cadastrarCategoria" element={<FormCategoria />} />
             <Route path="/editarCategoria/:id" element={<FormCategoria />} />
             <Route path="/deletarCategoria/:id" element={<DeleteCategoria />} />
+            <Route path="/produtos" element={<ListaProdutos />} />
+            <Route path="/gerenciarProdutos" element={<GerenciarProdutos />} />
+            <Route path="/cadastrarProduto" element={<FormProduto />} />
+            <Route path="/editarProduto/:id" element={<FormProduto />} />
+            <Route path="/deletarProduto/:id" element={<DeleteProduto />} />
           </Routes>
         </main>
         <Footer />
