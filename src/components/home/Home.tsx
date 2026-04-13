@@ -78,7 +78,7 @@ function Home() {
   </div>
 </div>
 
-      {/* Banner CTA */}
+      {/* Banner */}
       <div className="bg-green-600 text-white text-center py-12 px-6">
         <h3 className="text-2xl font-bold mb-2">Cuide da sua saúde hoje</h3>
         <p className="text-green-100 mb-6">Explore nossas categorias e encontre o que precisa</p>
